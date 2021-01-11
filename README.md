@@ -1,7 +1,7 @@
 # Eastern-Ceylon
 
 [![Travis](https://api.travis-ci.org/wongnai/eastern-ceylon.svg?branch=master)](https://travis-ci.org/wongnai/eastern-ceylon)
-[![GitHub license](https://img.shields.io/github/license/wongnai/eastern.svg)](https://github.com/wongnai/eastern/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/wongnai/eastern-ceylon.svg)](https://github.com/wongnai/eastern-ceylon/blob/master/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/eastern-ceylon.svg)](https://pypi.python.org/pypi/eastern-ceylon)
 
 Make [Eastern](https://github.com/wongnai/eastern) more friendly with GitOps by storing template variables in file.
@@ -11,7 +11,7 @@ Make [Eastern](https://github.com/wongnai/eastern) more friendly with GitOps by 
 ### ArgoCD setup
 
 1. You'll need a custom ArgoCD image with eastern and this eastern plugin installed
-2. Install [config management plguin](https://argoproj.github.io/argo-cd/user-guide/config-management-plugins/):
+2. Install [config management plugin](https://argoproj.github.io/argo-cd/user-guide/config-management-plugins/):
 
 ```
 configManagementPlugins: |
