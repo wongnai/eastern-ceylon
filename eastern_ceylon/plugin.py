@@ -3,7 +3,7 @@ import json
 
 from eastern import EasternPlugin
 
-ENV_KEY = '__ceylon'
+ENV_KEY = "__ceylon"
 
 
 class CeylonPlugin(EasternPlugin):
@@ -12,11 +12,11 @@ class CeylonPlugin(EasternPlugin):
             # For recursive format, don't run this plugin again
             return {}
 
-        vars_file = formatter.path / 'vars.json'
-        namespace = formatter.env['NAMESPACE']
+        vars_file = formatter.path / "vars.json"
+        namespace = formatter.env["NAMESPACE"]
 
         if not vars_file.is_file():
-            warnings.warn('Ceylon: vars.json file not found!')
+            warnings.warn("Ceylon: vars.json file not found!")
             return {}
 
         with vars_file.open() as fp:
@@ -25,9 +25,9 @@ class CeylonPlugin(EasternPlugin):
             out = {}
             if namespace in variables:
                 out = variables[namespace]
-            elif 'default' in variables:
-                out = variables['default']
-            
+            elif "default" in variables:
+                out = variables["default"]
+
             out[ENV_KEY] = True
-            
+
             return out
